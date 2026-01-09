@@ -455,6 +455,7 @@ input.gearweightval {
 }
 
 .tokenImg {
+    z-index: 2;
     position: absolute;
     top: 132px;
     left: 132px;
