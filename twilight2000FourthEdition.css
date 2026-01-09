@@ -1,0 +1,461 @@
+.main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e9d1a4;
+}
+
+.cIFirstRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+    gap: 12px;
+    font-size: small;
+}
+
+.cISecondRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.30);
+    gap: 12px;
+    font-size: small;
+}
+
+.cIThirdRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.30);
+    gap: 12px;
+    font-size: small;
+}
+
+.cIFourthRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+    gap: 12px;
+    font-size: small;
+}
+
+.cIFifthRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+    gap: 12px;
+    font-size: small;
+}
+
+th {
+    font-weight: normal;
+}
+
+.mediumHead {
+    width: 300px;
+    height: 35px;
+    box-shadow: #e9d1a4 -5px 0px, rgba(0, 0, 0, 0.30) -7px 0px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.medium {
+    width: 300px;
+    height: 35px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+}
+
+textarea.long {
+    width: 612px;
+    height: 36px;
+    resize: vertical;
+    min-width: 612px;
+    min-height: 35px;
+    max-height: 70px;
+    box-shadow: #e9d1a4 -5px 0px, rgba(0, 0, 0, 0.30) -7px 0px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+}
+
+textarea.howYouMet {
+    width: 721px;
+    height: 36px;
+    resize: vertical;
+    min-width: 721px;
+    min-height: 35px;
+    max-height: 70px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.xpStat {
+    font-size: 10px;
+}
+
+.tulora {
+    border-collapse: collapse;
+    width: 191px;
+}
+.xpStat {
+    border: 1px solid black;
+    padding: 8px 1px;
+    text-align: center;
+}
+
+.xpStat input {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px rgba(0, 0, 0, 0.35);
+}
+
+.experience {
+    border: 1px solid black;
+    padding: 8px 1px;
+    text-align: center;
+    border-right: rgba(0, 0, 0, 0);
+    background-color: #ccb07b;
+}
+
+.empty {
+    border: 1px solid black;
+    padding: 8px 1px;
+    text-align: center;
+    border-left: rgba(0, 0, 0, 0);
+    background-color: #ccb07b;
+}
+
+.charImg {
+    position: relative;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+    border-top: solid 2px rgba(0, 0, 0, 0.30);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #e9d1a4;
+}
+
+.paperClip {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    transform: rotate(-20deg);
+    z-index: 1;
+}
+
+.tableHeader {
+    font-size: small;
+    background-color: #ccb07b;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.50);
+}
+
+
+
+.attributesAndSkillsTable td {
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+    border-right: solid 2px rgba(0, 0, 0, 0.30);
+}
+
+.attributesAndSkillsTable select {
+    width: 60px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.attributesAndSkillsTable button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+    cursor: pointer;
+}
+
+.attributes {
+    font-size: medium;
+    height: 35;
+}
+
+.skills {
+    font-size: small;
+    height: 35;
+}
+
+.snaName {
+    width: 87px;
+}
+.snaStat {
+    width: 60px;
+}
+
+.attributesAndSkillsModifier input, .weaponModifier input {
+    width: 50px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: rgba(0, 0, 0, 0);
+    border-right: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.35);
+}
+
+.title {
+    font-size:large;
+    background-color: #ccb07b;
+    border-top: solid 2px rgba(0, 0, 0, 0.55);
+}
+
+.title2 {
+    background-color: #ccb07b;
+    box-shadow: #ccb07b 0px 12px, #ccb07b 0px -10px;
+}
+
+.specialtiesList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input.specName {
+    height: 30px;
+    width: 200px;
+    border: solid 2px rgba(0, 0, 0, 0.55);
+    background-color: #ccb07b;
+    font-size: 15px;
+}
+
+textarea.specDesc {
+    height: 50px;
+    width: 600px;
+    resize: vertical;
+    min-width: 600px;
+    min-height: 50px;
+    max-height: 100px;
+    border: solid 2px rgba(0, 0, 0, 0.55);
+    background-color: #ccb07b;
+    font-size: 15px;
+}
+
+.specialtyTabLabels {
+    padding-top: 10px;
+}
+
+.specNameLabel {
+    font-size: small;
+    width: 202px;
+    text-align: center;
+}
+
+.specDescLabel {
+    font-size: small;
+    width: 620px;
+    text-align: center;
+}
+
+table.infotable td {
+    padding-left: 55px;
+}
+
+.thirdrow input, .thirdrow select, .gearweightval {
+    width: 50px;
+    text-align: center;
+    background: none;
+    border-top: rgba(0, 0, 0, 0);
+    border-right: solid 2px rgba(0, 0, 0, 0.35);
+    border-left: rgba(0, 0, 0, 0);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.35);
+}
+.thirdrow button {
+    background: none;
+    border: solid 2px rgba(0, 0, 0, 0.35);
+}
+
+.weap input, .weap select, .iteminput input {
+    background: none;
+    border-top: rgba(0, 0, 0, 0);
+    border-right: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.35);
+}
+
+.weap button {
+    background: none;
+    border: solid 2px rgba(0, 0, 0, 0.35);
+}
+
+.w1 {
+    width: 30px;
+}
+.w2 {
+    width: 150px;
+}
+.w3 {
+    width: 130px;
+}
+.w4, .w7, .w8 {
+    width: 40px;
+}
+.w10 {
+    width: 45px;
+}
+
+.w5 input, .w6 input, .w7 input, .w9 input, .w10 input, .w11 input, .w12 input, .itemcap {
+    width: 40px;
+}
+
+.wtd1 {
+    padding-left: 12px;
+    padding-right: 7px;
+}
+.wtd2 {
+    padding-left: 8px;
+    padding-right: 118;
+}
+.wtd3 {
+    padding-left: 119px;
+    padding-right: 2px;
+}
+.wtd4 {
+    padding-left: 48px;
+    padding-right: 10px;
+}
+.wtd5 {
+    padding-left: 2px;
+    padding-right: 6px;
+}
+.wtd6 {
+    padding-left: 10px;
+    padding-right: 4px;
+}
+.wtd7 {
+    padding-left: 11px;
+    padding-right: 14px;
+}
+.wtd8{ 
+    padding-left: 14px;
+    padding-right:7px;
+}
+.wtd9 {
+    padding-left: 3px;
+    padding-right:3px;
+}
+.wtd10 {
+    padding-left: 4px;
+    padding-right: 15px;
+}
+.wtd11 {
+    padding-left: 5px;
+    padding-right: 1px;
+}
+.wtd12 {
+    padding-left: 10px;  
+    padding-right: 1px;
+}
+.wtd13 {
+    width: 212px;
+}
+.gearStat {
+    font-size: smaller;
+    width: 312px;
+}
+
+.itemweight {
+    width: 40px;
+}
+
+.itm1 {
+    padding-left: 2px;
+    padding-right:175px;
+}
+.itm2 {
+    padding-left: 2px;
+    padding-right:20px;
+}
+.itm3 {
+    padding-left: 1px;
+    padding-right:18px;
+}
+
+.specialtiesheaders {
+    background-color: #ccb07b;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+}
+.specNameLabel {
+    border-right: solid 2px rgba(0, 0, 0, 0.30);
+}
+
+.itemname {
+    width: 150;
+}
+
+.itm3rdrow {
+    border-left: solid 2px rgba(0, 0, 0, 0.30);
+    border-right: solid 2px rgba(0, 0, 0, 0.30);
+}
+
+.gearStat, .itmlabels, .itmboxes {
+    background-color: #ccb07b;
+}
+.itmlabels {
+    border-bottom: solid 2px rgba(0, 0, 0, 0.30);
+}
+
+.healthLables td{
+    background-color: #ccb07b;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+    box-shadow: #ccb07b 0px -10px;
+}
+.inj {
+    border-left: solid 2px rgba(0, 0, 0, 0.35);
+}
+.rads {
+    border-right: solid 2px rgba(0, 0, 0, 0.30);
+    width: 300px;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.55);
+}
+.injdis {
+    width: 450px
+}
+textarea.diseases, textarea.injuries {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+    border-right: solid 2px (0, 0, 0, 0.35);
+    border-bottom: solid 2px  rgba(0, 0, 0, 0.35);
+    width: 625px;
+    height: 36px;
+    resize: vertical;
+    min-width: 625px;
+    min-height: 35px;
+    max-height: 75px;
+    font-size: 15px;
+}
+
+.ammoDice {
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px rgba(0, 0, 0, 0.30);
+}
+
+.charsheet input[type="number"]::-webkit-inner-spin-button, 
+.charsheet input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+.charsheet input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+input.gearweightval {
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.30);
+}
+
+.tokenImg {
+    position: absolute;
+    top: 132px;
+    left: 132px;
+}

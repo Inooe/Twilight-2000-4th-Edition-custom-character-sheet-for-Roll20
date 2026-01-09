@@ -1,0 +1,689 @@
+<!--<link rel="stylesheet" type="text/css" href="twilight2000FourthEdition.css">-->
+<!--<button type="roll" value="">Test button</button>-->
+<div class="sheet">
+    <div class ="main">
+        <!-- character info -->
+        <span class="charImg">
+            <table>
+                <tr>
+                    <td>
+                        <img class="avatar" name="attr_character_avatar" height="150px" width="150px">
+                        <img class="tokenImg" name="attr_character_token" height="60px" width="60px">
+                        <img class="paperClip" src="https://i.ibb.co/Kcx1zbvf/Pngtree-paper-clip-vector-illustration-painting-9520398.png" height="75px" width="30px">
+                    </td>
+                    <td>
+                        <table class="infotable">
+                            <tr>
+                                <td>
+                                    <span>DAMAGE</span>
+                                </td>
+                                <td>
+                                    <span>Hit Capacity</span>
+                                </td>
+                                <td>
+                                    <span class="thirdrow number-input no-spin-input"><input type="number" name="attr_hitcap" value="ceil((@{strength_grade}+@{agility_grade})/4)" disabled="true"></span>
+                                </td>
+                                <td>
+                                    <span>Starving</span>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="attr_starving" value="1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span><input type="checkbox" name="attr_dmg1" value="1"></span>
+                                    <span><input type="checkbox" name="attr_dmg2" value="1"></span>
+                                    <span><input type="checkbox" name="attr_dmg3" value="1"></span>
+                                    <span><input type="checkbox" name="attr_dmg4" value="1"></span>
+                                    <span><input type="checkbox" name="attr_dmg5" value="1"></span>
+                                    <span><input type="checkbox" name="attr_dmg6" value="1"></span>
+                                </td>
+                                <td>
+                                    <span>Stress Capacity</span>
+                                </td>
+                                <td class="thirdrow">
+                                    <span><input class="number-input no-spin-input" type="number" name="attr_stresscap" value="ceil((@{intelligence_grade}+@{empathy_grade})/4)" disabled="true"></span>
+                                </td>
+                                <td>
+                                    <span>Dehydrated</span>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="attr_dehydrated" value="1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>STRESS</span>
+                                </td>
+                                <td>
+                                    <span>Coolness Under Fire</span>
+                                </td>
+                                <td>
+                                    <span class="thirdrow">
+                                        <select name="attr_cufdie">
+                                            <option value="12">A</option>
+                                            <option value="10">B</option>
+                                            <option value="8">C</option>
+                                            <option value="6" selected>D</option>
+                                            <option value="0"> </option>
+                                        </select>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>Sleep Deprived</span>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="attr_sleepdeprived" value="1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span><input type="checkbox" name="attr_stress1" value="1"></span>
+                                    <span><input type="checkbox" name="attr_stress2" value="1"></span>
+                                    <span><input type="checkbox" name="attr_stress3" value="1"></span>
+                                    <span><input type="checkbox" name="attr_stress4" value="1"></span>
+                                    <span><input type="checkbox" name="attr_stress5" value="1"></span>
+                                    <span><input type="checkbox" name="attr_stress6" value="1"></span>
+                                </td>
+                                <td>
+                                    <span>Unit Morale</span>
+                                </td>
+                                <td>
+                                    <span class="thirdrow">
+                                        <select name="attr_unimordie">
+                                            <option value="12">A</option>
+                                            <option value="10">B</option>
+                                            <option value="8">C</option>
+                                            <option value="6">D</option>
+                                            <option value="0" selected> </option>
+                                        </select>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>Hypothermic</span>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="attr_hypothermic" value="1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><span class="thirdrow"><button>C.U.F.</button></span></td>
+                                <!--type="roll" 
+                                    value="&{template:default} {name=CUF} {{C.U.F. Die=[[1d@{cufdie}]]}} {{Unimor Die=[[1d@{unimordie}]]}}"-->
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </span>
+
+        <!-- first row -->
+        <div class="cIFirstRow">
+            <img src="https://freeleaguepublishing.com/wp-content/uploads/2023/08/Twilight_2000_RPG_Logo.png" style="width: 300px; filter: invert();">
+            <span class="m">NAME <br><input class="mediumHead" type="text" name="attr_character_name"></span>
+            <span class="m">NATIONALITY <br><input class="mediumHead" type="text" name="attr_nationality"></span>
+        </div>
+    
+        <!-- second row -->
+        <div class="cISecondRow">
+            <span class="m">BRANCH <br><input class="medium" type="text" name="attr_branch"></span>
+            <span class="b">APPEARANCE <br><textarea class="long" name="attr_appearance"></textarea></span>
+        </div>
+
+        <!-- third row -->
+        <div class="cIThirdRow">
+            <span class="m">MILITARY RANK <br><input class="medium" type="text" name="attr_rank"></span>
+            <span class="b">MORAL CODE <br><textarea class="long" name="attr_moral_code"></textarea></span>
+        </div>
+
+        <!-- fourth row -->
+        <div class="cIFourthRow">
+            <span class="m">BUDDY <br><input class="medium" type="text" name="attr_buddy"></span>
+            <span class="b">BIG DREAM <br><textarea class="long" name="attr_big_dream"></textarea></span>
+        </div>
+
+        <!-- fifth row -->
+        <div class="cIFifthRow">
+            
+            <span class="m">HOW YOU MET THE GROUP:<br><textarea class="howYouMet" name="attr_howyoumetthegroup"></textarea></span>
+            <span>
+                <table class="tulora">
+                    <tr>
+                        <th class="experience">EXPERIENCE</th>
+                        <th class="empty"> </th>
+                    </tr>
+                    <tr class="xpStat">
+                        <td>CURRENT <input class="number-input no-spin-input" type="number" name="attr_currentexperience" style="width: 50px;"></td>
+                        <td>TOTAL <input class="number-input no-spin-input" type="number" name="attr_totalexperience" style="width: 50px;"></td>
+                    </tr>
+                </table>
+            </span>
+        </div>
+            <!-- attributes and skills -->
+            <div class="title2">ATTRIBUTES AND SKILLS</div>
+            <table class="attributesAndSkillsTable">
+                <tr class="tableHeader">
+                    <td class="snaName"> </td>
+                    <td class="snaStat">RATING</td>
+                    <td class="snaName"> </td>
+                    <td class="snaStat">RATING</td>
+                    <td class="snaName"> </td>
+                    <td class="snaStat">RATING</td>
+                    <td class="snaName"> </td>
+                    <td class="snaStat">RATING</td>
+                </tr>
+                <tr class="attributes">
+                    <td class="snaName"><button>STRENGTH</button></td>
+                    <td class="snaStat">
+                        <select name="attr_strength_grade">
+                            <option value="12">A</option>
+                            <option value="10">B</option>
+                            <option value="8" selected>C</option>
+                            <option value="6">D</option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>AGILITY</button></td>
+                    <td class="snaStat">
+                        <select name="attr_agility_grade">
+                            <option value="12">A</option>
+                            <option value="10">B</option>
+                            <option value="8" selected>C</option>
+                            <option value="6">D</option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>INTELLIGENCE</button></td>
+                    <td class="snaStat">
+                        <select name="attr_intelligence_grade">
+                            <option value="12">A</option>
+                            <option value="10">B</option>
+                            <option value="8" selected>C</option>
+                            <option value="6">D</option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>EMPATHY</button></td>
+                    <td class="snaStat">
+                        <select name="attr_empathy_grade">
+                            <option value="12">A</option>
+                            <option value="10">B</option>
+                            <option value="8" selected>C</option>
+                            <option value="6">D</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="skills">
+                    <td class="snaName"><button>Weapons</button></td>
+                    <td class="snaStat">
+                        <select name="attr_heavyweapons_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Driving</button></td>
+                    <td class="snaStat">
+                        <select name="attr_driving_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Recon</button></td>
+                    <td class="snaStat">
+                        <select name="attr_recon_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Command</button></td>
+                    <td class="snaStat">
+                        <select name="attr_command_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="skills">
+                    <td class="snaName"><button>Close Combat</button></td>
+                    <td class="snaStat">
+                        <select name="attr_closecombat_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Mobility</button></td>
+                    <td class="snaStat">
+                        <select name="attr_mobility_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Survival</button></td>
+                    <td class="snaStat">
+                        <select name="attr_survival_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Persuasion</button></td>
+                    <td class="snaStat">
+                        <select name="attr_persuasion_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="skills">
+                    <td class="snaName"><button>Stamina</button></td>
+                    <td class="snaStat">
+                        <select name="attr_stamina_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Ranged Combat</button></td>
+                    <td class="snaStat">
+                        <select name="attr_rangedcombat_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Tech</button></td>
+                    <td class="snaStat">
+                        <select name="attr_tech_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                    <td class="snaName"><button>Medical Aid</button></td>
+                    <td class="snaStat">
+                        <select name="attr_medicalaid_grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1" selected> </option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div class="attributesAndSkillsModifier">
+                MODIFIER
+                <input class="number-input no-spin-input" type="number" name="attr_attributesAndSkillsModifier">
+            </div>
+            
+        <div>
+            <!--Weapons-->
+            <div class="title">WEAPONS</div>
+            <table>
+                <tr class="tableHeader">
+                    <td class="wtd1"><span>Roll</span></td>
+                    <td class="wtd2"><span>Name</span></td>
+                    <td class="wtd3"><span>Weapon Type</span></td>
+                    <td class="wtd4"><span>REL</span></td>
+                    <td class="wtd5"><span>ROF</span></td>
+                    <td class="wtd6"><span>DMG</span></td>
+                    <td class="wtd7"><span>Crit</span></td>
+                    <td class="wtd8"><span>Blast</span></td>
+                    <td class="wtd9"><span>Range</span></td>
+                    <td class="wtd10"><span>Mag</span></td>
+                    <td class="wtd11"><span>Armor</span></td>
+                    <td class="wtd12"><span>Weight</span></td>
+                    <td class="wtd13"><div> </div> </td>
+                </tr>
+            </table>
+            <fieldset class="repeating_weapons">
+                <table class="weap">
+                    <tr>
+                        <td><button class="w1">R</button></td>
+                        <td><input class="w2" type="text" name="attr_weaponname"></td>
+                        <td>
+                            <select class="w3" name="attr_weapontype">
+                                <option value="4">Ranged Weapon</option>
+                                <option value="3">Heavy Weapon</option>
+                                <option value="2">Melee Weapon</option>
+                                <option value="1" selected> </option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="w4" name="attr_weapon_reliability">
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                                <option value="0" selected> </option>
+                            </select>
+                        </td>
+                        <td class="w5"><input class="number-input no-spin-input" type="number" name="attr_weapon_rof"></td>
+                        <td class="w6"><input class="number-input no-spin-input" type="number" name="attr_weapon_dmg"></td>
+                        <td class="w7"><input class="number-input no-spin-input" type="number" name="attr_weapon_crit"></td>
+                        <td>
+                            <select class="w8" name="attr_weapon_blast">
+                                <option value="5">A</option>
+                                <option value="4">B</option>
+                                <option value="3">C</option>
+                                <option value="2">D</option>
+                                <option value="1" selected> </option>
+                            </select></td>
+                        <td class="w9"><input class="number-input no-spin-input" type="number" name="attr_weapon_range"></td>
+                        <td class="w10"><input class="number-input no-spin-input" type="number" name="attr_weapon_mag"></td>
+                        <td class="w11"><input class="number-input no-spin-input" type="number" name="attr_weapon_armor"></td>
+                        <td class="w12"><input class="number-input no-spin-input" type="number" name="attr_weapon_weight" step="any"></td>
+                    </table>
+            </fieldset>
+            <div class="weaponModifier">
+                MODIFIER
+                <input class="number-input no-spin-input" type="number" name="attr_weaponModifier">
+                AMMO DICE 
+                <select class="ammoDice" name="attr_weaponAmmoDice">
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                    <option value="0" selected> </option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <!--Inventory-->
+            <div class="title">GEAR</div>
+            <table>
+                <tr>
+                    <td class="gearStat">
+                        Maximum Carry Weight: <input type="number" name="attr_strength_grade" readonly class="gearweightval number-input no-spin-input">
+                    </td>
+                    <td class="gearStat">
+                        Maximum Backpack Weight: <input type="number" name="attr_strength_grade" readonly class="gearweightval number-input no-spin-input">
+                    </td>
+                    <td class="gearStat">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="gearStat">
+                        Current Carry Weight: <input type="number" name="attr_current_carry_weight" readonly class="gearweightval number-input no-spin-input">
+                    </td>
+                    <td class="gearStat">
+                        Current Backpack Weight: <input type="number" name="attr_current_backpack_weight" readonly class="gearweightval number-input no-spin-input">
+                    </td>
+                    <td class="gearStat">
+                    </td>
+                </tr>
+            </table>
+            
+            
+            <table>
+                <tr class="itmboxes">
+                    <td>CARRIED</td>
+                    <td class="itm3rdrow">BACKPACK</td>
+                    <td>WORN</td>
+                </tr>
+                <tr class="itmlabels">
+                    <td>
+                        <span class="itm1">Name</span>
+                        <span class="itm2">Cap</span>
+                        <span class="itm3">Wgt.</span>
+                    </td>
+                    <td class="itm3rdrow">
+                        <span class="itm1">Name</span>
+                        <span class="itm2">Cap</span>
+                        <span class="itm3">Wgt.</span>
+                    </td>
+                    <td>
+                        <span class="itm1">Name</span>
+                        <span class="itm2">Cap</span>
+                        <span class="itm3">Wgt.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class="repeating_carriedgear">
+                            <table>
+                                <tr>
+                                    <td class="iteminput">
+                                        <input type="text" class="itemname" name="attr_itemName">
+                                        <input class="itemcap number-input no-spin-input" type="number" name="attr_itemCapacity" step="any">
+                                        <input type="number" class= "itemweight number-input no-spin-input" name="attr_itemWeight" step="any">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                    <td class="itm3rdrow">
+                        <fieldset class="repeating_backpackgear">
+                            <table>
+                                <tr>
+                                    <td class="iteminput">
+                                        <input type="text" class="itemname" name="attr_itemName_backpack">
+                                        <input class="itemcap number-input no-spin-input" type="number" name="attr_itemCapacity_backpack" step="any">
+                                        <input type="number" class= "itemweight number-input no-spin-input" name="attr_itemWeight_backpack" step="any">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset class="repeating_worngear">
+                            <table>
+                                <tr>
+                                    <td class="iteminput">
+                                        <input type="text" class="itemname" name="attr_itemName_worn">
+                                        <input class="itemcap number-input no-spin-input" type="number" name="attr_itemCapacity_worn" step="any">
+                                        <input type="number" class= "itemweight number-input no-spin-input" name="attr_itemWeight_worn" step="any">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="title">HEALTH</div>
+        <div>
+            <table>
+                <tr class="healthLables">
+                    <td>
+                        RADIATION
+                    </td>
+                    <td class="inj">
+                        INJURIES AND DISEASE
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rads">
+                        <span>
+                            TEMPORARY 
+                            <input type="checkbox" name="attr_rad_temp1">
+                            <input type="checkbox" name="attr_rad_temp2">
+                            <input type="checkbox" name="attr_rad_temp3">
+                            <input type="checkbox" name="attr_rad_temp4">
+                            <input type="checkbox" name="attr_rad_temp5">
+                            <input type="checkbox" name="attr_rad_temp6">
+                            <input type="checkbox" name="attr_rad_temp7">
+                            <input type="checkbox" name="attr_rad_temp8">
+                            <input type="checkbox" name="attr_rad_temp9">
+                            <input type="checkbox" name="attr_rad_temp10">
+                        </span>
+                    </td>
+                    <td class="injdis">
+                        <span>
+                        INJURIES
+                        <textarea class="injuries" name="attr_injuries"></textarea>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rads">
+                        <span>
+                            PERMANENT 
+                            <input type="checkbox" name="attr_rad_perm1">
+                            <input type="checkbox" name="attr_rad_perm2">
+                            <input type="checkbox" name="attr_rad_perm3">
+                            <input type="checkbox" name="attr_rad_perm4">
+                            <input type="checkbox" name="attr_rad_perm5">
+                            <input type="checkbox" name="attr_rad_perm6">
+                            <input type="checkbox" name="attr_rad_perm7">
+                            <input type="checkbox" name="attr_rad_perm8">
+                            <input type="checkbox" name="attr_rad_perm9">
+                            <input type="checkbox" name="attr_rad_perm10">
+                        </span>
+                    </td>
+                    <td class="injdis">
+                        <span>
+                        DISEASES
+                        <textarea class="diseases" name="attr_diseases"></textarea>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <!--specialties-->
+            <div class="title">SPECIALTIES</div>
+            <div class="specialtiesheaders">
+                <table class="specialtyTabLabels">
+                    <tr>
+                        <th class="specNameLabel">NAME</th>
+                        <th class="specDescLabel">DESCRIPTION</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="specialtiesList">
+                <fieldset class="repeating_specialties">
+                    <input type="text" name="attr_specialty" class="specName"> <textarea name="attr_specialty_description" class="specDesc"></textarea>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<rolltemplate class="sheet-rolltemplate-twilight20004e">
+    <div class="sheet-template-container">
+        
+    </div>
+</rolltemplate> 
+-->
+<!--
+<script>
+    const cufdie = document.getElementsByName("attr_cufdie")[0];
+    const cufroll = document.getElementById("cufroll");
+
+    function updateCUFRoll() {
+        switch (cufdie.value) {
+            case 1:
+                cufroll.value = ""
+                break;
+            case 2:
+                cufroll.value = "/r 1d6"
+                break;
+            case 3:
+                cufroll.value = "/r 1d8"
+                break;
+            case 4:
+                cufroll.value = "/r 1d10"
+                break;
+            case 5:
+                cufroll.value = "/r 1d12"
+                break;
+        }
+    }
+
+cufdie.addEventListener("change", updateCufRoll);
+updateCufRoll();
+</script> 
+-->
+
+<script type="text/worker">
+const repeatingSum = (destinations, section, fields) => {
+    if (!Array.isArray(destinations)) destinations = [destinations.replace(/\s/g, '').split(',')];
+    if (!Array.isArray(fields)) fields = [fields.replace(/\s/g, '').split(',')];
+    getSectionIDs(`repeating_${section}`, idArray => {
+        const attrArray = idArray.reduce((m, id) => [...m, ...(fields.map(field => `repeating_${section}_${id}_${field}`))], []);
+        getAttrs([...attrArray], v => {
+            const getValue = (section, id, field) => v[`repeating_${section}_${id}_${field}`] === 'on' ? 1 : parseFloat(v[`repeating_${section}_${id}_${field}`]) || 0;
+            const commonMultipliers = (fields.length <= destinations.length) ? [] : fields.splice(destinations.length, fields.length - destinations.length);
+            const output = {};
+            destinations.forEach((destination, index) => {
+                output[destination] = idArray.reduce((total, id) => total + getValue(section, id, fields[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * getValue(section, id, mult), 1), 0);
+            });
+            setAttrs(output);
+        }); 
+    }); 
+};
+
+// Calculate weapon total weight
+on('change:repeating_weapons:weapon_weight remove:repeating_weapons', function() {
+    repeatingSum("weapon_total_weight", "weapons", "weapon_weight");
+});
+
+// Calculate carried gear weight
+on('change:repeating_carriedgear:itemWeight remove:repeating_carriedgear', function() {
+    repeatingSum("carried_gear_weight", "carriedgear", "itemWeight");
+});
+
+// Calculate worn gear weight
+on('change:repeating_worngear:itemWeight_worn remove:repeating_worngear', function() {
+    repeatingSum("worn_gear_weight", "worngear", "itemWeight_worn");
+});
+
+// Calculate backpack gear weight
+on('change:repeating_backpackgear:itemWeight_backpack remove:repeating_backpackgear', function() {
+    repeatingSum("current_backpack_weight", "backpackgear", "itemWeight_backpack");
+});
+
+// Combine weapons + carried + worn into total carried weight
+on('change:weapon_total_weight change:carried_gear_weight change:worn_gear_weight', function() {
+    getAttrs(['weapon_total_weight', 'carried_gear_weight', 'worn_gear_weight'], function(values) {
+        const weaponWeight = parseFloat(values.weapon_total_weight) || 0;
+        const carriedWeight = parseFloat(values.carried_gear_weight) || 0;
+        const wornWeight = parseFloat(values.worn_gear_weight) || 0;
+        
+        setAttrs({
+            current_carry_weight: weaponWeight + carriedWeight + wornWeight
+        });
+    });
+});
+
+// Initialize all totals when sheet opens
+on('sheet:opened', function() {
+    repeatingSum("weapon_total_weight", "weapons", "weapon_weight");
+    repeatingSum("carried_gear_weight", "carriedgear", "itemWeight");
+    repeatingSum("worn_gear_weight", "worngear", "itemWeight_worn");
+    repeatingSum("current_backpack_weight", "backpackgear", "itemWeight_backpack");
+});
+</script>
