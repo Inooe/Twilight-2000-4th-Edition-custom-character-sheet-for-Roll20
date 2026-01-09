@@ -1,10 +1,12 @@
 As the description says, this is for roll 20 and a Pro account is needed as it enables you to use custom character sheets.
-Just go to the settings of your game and scroll down to find "Character Sheet Template" and select 'Custom' (This is only found when you have a PRO subscription in your Roll20 account, otherwise you can only select the library of Character Sheets that Roll20 has approved and able to be used by anyone without a subscription)
+
+Just go to the settings of your game and scroll down to find "Character Sheet Template" and select 'Custom' (This is only found when you have a PRO subscription in your Roll20 account, otherwise you can only select the library of Character Sheets that Roll20 has approved and able to be used by anyone without a subscription) then copy and paste the code into the html and css tabs where they're supposed to be.
+
 My tip for anyone who wants to use a custom character sheet (even for other custom character sheets than this) on Roll20 is just to buy a PRO subscription for one month and make two or more games that have the same character sheet so you can use the other ones as backup. When your PRO subscription expires, the custom character sheet stays in the game and remains functional, just that you cant edit or change it to a different one.
 
 This is in no way, shape, or form a better alternative or to be competed with the Twilight 2000 4th Edition Character sheet that's readily available in Roll20 made by NocFenix.
 It's really up to you but this is just my own preference and was originally just for our small group of friends. I'm not really a great programmer just yet or anything, my code might not even be optimized, I have only about a year of experience with HTML and JavaScript.
-This was originally planned to have rollable buttons and other automations, but I kinda found the template making and macros of roll20 somewhat overwhelming especially with it's limits. Not that I think it's too difficult or that I can't do it, it just would be very time consuming and confusing too look around at, plus we just decided to use the Sebedius Discord Bot for rolls.
+Originally, I planned to have rollable buttons and other automations, but I kinda found the template making and macros of Roll20 somewhat overwhelming especially with it's limits. Not that I think it's too difficult or that I can't do it, it just would be very time consuming and confusing too look around at, plus we just decided to use the Sebedius Discord Bot for rolls.
 I probably won't continue this or so, depends if I feel like picking up on it to finally add tempplates, rolls, automations and whatever. If anyone wants to pick up from this then feel free to do so.
 
 (Please don't think otherwise that I made this out of spite or against anyone especially the sheet author, NocFenix, even though I really did make this because there are just some things I preffered)
