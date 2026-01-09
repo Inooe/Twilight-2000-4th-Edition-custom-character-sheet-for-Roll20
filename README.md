@@ -20,5 +20,6 @@ The difference of this character sheet are as follows;
 * Weapon weight and item weight on Carried and Worn are all summed up and return as current carry weight so you don't have to list up your weapon or armor in both the weapons section and the carried gear section.
 * Cap input on the gear section mostly represents Ammo capacity, but if you have some sort of house rule that makes a consumable item like water have 2 or more uses than just one use and its gone from your inventory then you can use cap to represent that.
 * Worn gear was somewhat a stylistic choice but it should represent as armor and the Cap should represent how much armor does a worn piece of gear would give. Should name your armor as something like "Atlyn (Head)" since there's no input field for that
+* Does not have a section for vehicles and allies
 
 Also, this doesn't have all the attribute names being similar with NocFenix's sheet so if you're gonna migrate your character to this then it might not have everything set up and you'll have to manually copy and paste them from the attributes and abbilities area.
