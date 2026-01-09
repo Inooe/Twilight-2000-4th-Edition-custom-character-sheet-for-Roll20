@@ -646,27 +646,22 @@ const repeatingSum = (destinations, section, fields) => {
     }); 
 };
 
-// Calculate weapon total weight
 on('change:repeating_weapons:weapon_weight remove:repeating_weapons', function() {
     repeatingSum("weapon_total_weight", "weapons", "weapon_weight");
 });
 
-// Calculate carried gear weight
 on('change:repeating_carriedgear:itemWeight remove:repeating_carriedgear', function() {
     repeatingSum("carried_gear_weight", "carriedgear", "itemWeight");
 });
 
-// Calculate worn gear weight
 on('change:repeating_worngear:itemWeight_worn remove:repeating_worngear', function() {
     repeatingSum("worn_gear_weight", "worngear", "itemWeight_worn");
 });
 
-// Calculate backpack gear weight
 on('change:repeating_backpackgear:itemWeight_backpack remove:repeating_backpackgear', function() {
     repeatingSum("current_backpack_weight", "backpackgear", "itemWeight_backpack");
 });
 
-// Combine weapons + carried + worn into total carried weight
 on('change:weapon_total_weight change:carried_gear_weight change:worn_gear_weight', function() {
     getAttrs(['weapon_total_weight', 'carried_gear_weight', 'worn_gear_weight'], function(values) {
         const weaponWeight = parseFloat(values.weapon_total_weight) || 0;
@@ -679,7 +674,6 @@ on('change:weapon_total_weight change:carried_gear_weight change:worn_gear_weigh
     });
 });
 
-// Initialize all totals when sheet opens
 on('sheet:opened', function() {
     repeatingSum("weapon_total_weight", "weapons", "weapon_weight");
     repeatingSum("carried_gear_weight", "carriedgear", "itemWeight");
